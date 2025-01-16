@@ -10,6 +10,8 @@ namespace M.E.J_PropertyWebsite.Server.Database
 		}
 
         public DbSet<Admin> Admins { get; set; }
+		public DbSet<Tenant> Tenants { get; set; }
+		public DbSet<RentalProperty> RentalProperties { get; set; }
 
     }
 }
