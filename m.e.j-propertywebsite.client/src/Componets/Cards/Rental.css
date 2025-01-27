@@ -1,0 +1,29 @@
+.rental-card {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+	.rental-card:hover {
+		transform: scale(1.05);
+	}
+
+.rental-image {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.rental-info {
+	padding: 16px;
+}
+
+	.rental-info h2 {
+		margin: 0 0 8px;
+	}
+
+	.rental-info p {
+		margin: 4px 0;
+	}

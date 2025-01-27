@@ -1,0 +1,10 @@
+.rental-detail-container {
+	padding: 20px;
+}
+
+.rental-detail-image {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
