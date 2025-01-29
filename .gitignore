@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/M.E.J-PropertyWebsite.Server/Migrations/20250129185316_testing.cs
+/M.E.J-PropertyWebsite.Server/Migrations/20250129185316_testing.Designer.cs
+/M.E.J-PropertyWebsite.Server/Migrations/20250129185818_testing2.cs
+/M.E.J-PropertyWebsite.Server/Migrations/20250129185818_testing2.Designer.cs
+/M.E.J-PropertyWebsite.Server/Migrations/ServerDBContextModelSnapshot.cs
