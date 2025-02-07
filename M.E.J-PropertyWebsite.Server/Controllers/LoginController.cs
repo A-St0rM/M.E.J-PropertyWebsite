@@ -15,23 +15,25 @@ namespace M.E.J_PropertyWebsite.Server.Controllers
             _context = context;
         }
 
-        [HttpPost("login")]
-        public IActionResult Login([FromBody] Admin loginRequest)
-        {
-            if (loginRequest == null || string.IsNullOrEmpty(loginRequest.UserName) || string.IsNullOrEmpty(loginRequest.Password))
-            {
-                return BadRequest("Username or password is missing.");
-            }
+		[HttpPost("login")]
+		public IActionResult Login([FromBody] Admin loginRequest)
+		{
+			if (loginRequest == null || string.IsNullOrEmpty(loginRequest.UserName) || string.IsNullOrEmpty(loginRequest.Password))
+			{
+				return BadRequest("Username or password is missing.");
+			}
 
-            // Validate the admin credentials
-            var admin = _context.Admins.FirstOrDefault(a => a.UserName == loginRequest.UserName && a.Password == loginRequest.Password);
+			var admin = _context.Admins.FirstOrDefault(a => a.UserName == loginRequest.UserName && a.Password == loginRequest.Password);
 
-            if (admin == null)
-            {
-                return Unauthorized("Invalid username or password.");
-            }
+			if (admin == null)
+			{
+				return Unauthorized("Invalid username or password.");
+			}
 
-            return Ok(new { Message = "Login successful!" });
-        }
-    }
+			HttpContext.Session.SetString("isAuthenticated", "true");
+
+			return Ok(new { Message = "Login successful!" });
+		}
+
+	}
 }

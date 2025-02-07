@@ -1,0 +1,32 @@
+.admin-container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	font-family: 'Arial', sans-serif;
+	background-color: #f4f4f4;
+}
+
+.admin-header {
+	background-color: #2c3e50;
+	color: white;
+	text-align: center;
+	padding: 1.5rem;
+	font-size: 1.8rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-content {
+	display: flex;
+	flex: 1;
+}
+
+.admin-main {
+	flex: 1;
+	padding: 2rem;
+	background-color: white;
+	box-shadow: -3px 0 5px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	margin: 1rem;
+}
