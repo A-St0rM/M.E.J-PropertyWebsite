@@ -14,5 +14,6 @@ namespace M.E.J_PropertyWebsite.Server.Database
         public DbSet<Tenant> Tenant { get; set; }
         public DbSet<RentalHistory> rentalHistories { get; set; }
         public DbSet<PropertyType> PropertyType { get; set; }
+        public DbSet<WaitingList> WaitlingList { get; set; }
     }
 }

@@ -4,5 +4,14 @@
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        public PropertyType(string Name)
+        {
+            this.Name = Name;
+        }
+
+        public PropertyType()
+        {
+        }
     }
 }
